@@ -111,3 +111,164 @@
 // console.log(discount);
 
 // 10
+
+// 11
+// const products = [
+//   { name: "Apple - Macbook - Pro", price: 2000 },
+//   { name: "Acer - Extenca", price: 750 },
+//   { name: "Apple - Macbook - Air", price: 1500 },
+//   { name: "Acer - Victus", price: 800 },
+// ];
+
+// products.sort((a, b) => a.price - b.price);
+
+// const orzoni = products[0];
+
+// console.log("Eng arzoni - ", orzoni);
+
+// 12
+// const products = [
+//   { name: "Apple - Macbook - Pro", price: 2000 },
+//   { name: "Acer - Extenca", price: 750 },
+//   { name: "Apple - Macbook - Air", price: 1500 },
+//   { name: "Acer - Victus", price: 800 },
+// ];
+
+// const allPrice = products.reduce((acc, curVal) => acc + curVal.price, 0);
+
+// console.log("Hamma noutbooklar narxi - ", allPrice);
+
+// 13
+// const products = [
+//   { name: "Apple - Macbook - Pro", price: 2000 },
+//   { name: "Acer - Extenca", price: 750 },
+//   { name: "Apple - Macbook - Air", price: 1500 },
+//   { name: "Acer - Victus", price: 800 },
+// ];
+
+// const value = products.map((product) => product.name);
+
+// console.log(value);
+
+// 14
+// const products = [
+//   { id: 1, name: "Lenovo - IdealPad", price: 500 },
+//   { id: 2, name: "Acer - Extenca", price: 750 },
+//   { id: 3, name: "Apple - Macbook - Air", price: 1500 },
+//   { id: 4, name: "Acer - Victus", price: 800 },
+//   { id: 5, name: "Apple - Macbook - Pro", price: 2000 },
+// ];
+
+// const ids = products.find((item) => item.id === 5);
+
+// console.log(ids);
+
+// 15
+// let products = [
+//   {
+//     id: 6,
+//     name: "Smarthpone",
+//     price: 12000,
+//     rating: 4.5,
+//     discount: 20,
+//   },
+//   {
+//     id: 2,
+//     name: "Acer",
+//     price: 10000,
+//     rating: 4.3,
+//     discount: 10,
+//   },
+//   {
+//     id: 1,
+//     name: "Mac book",
+//     price: 17000,
+//     rating: 4.7,
+//     discount: 40,
+//   },
+//   {
+//     id: 4,
+//     name: "HP",
+//     price: 21000,
+//     rating: 4.1,
+//     discount: 30,
+//   },
+//   {
+//     id: 5,
+//     name: "Dell",
+//     price: 35000,
+//     rating: 4.9,
+//     discount: 30,
+//   },
+// ];
+
+// const value = products.filter((items) => items.id != 4);
+
+// console.log(value);
+
+// 16
+// const text = "Georgie Raymond ?Richard Martin";
+
+// const result = text.split("").every((el) => {
+//   if (!Number(el.trim())) {
+//     return true;
+//   }
+// });
+// console.log(result);
+
+// 17
+// const text = "Georgie Raymond Richard Martin";
+// const result = text
+//   .split(" ")
+//   .join("")
+//   .split("")
+//   .every((el) => {
+//     const string = new String(el).charCodeAt();
+//     if ((string >= 65 && string <= 90) || (string >= 97 && string <= 122)) {
+//       return true;
+//     }
+//   });
+// console.log(result);
+
+// 18
+// function num(arr) {
+//   const trueValues = arr.filter((item) => item);
+//   const falseValues = arr.filter((item) => !item);
+
+//   return {
+//     true: trueValues,
+//     false: falseValues,
+//   };
+// }
+
+// console.log(num([false, 1, 10, "", null, "abdulaziz", 1.13, 0]));
+
+// 18
+// const words = "Men MuhammadNurulloh Web Programmerman";
+
+// function wordsnum() {
+//   return words.split(" ").map((word) => word.length);
+// }
+// console.log(wordsnum());
+
+// 19
+// const text = "Georgie Raymond Richard Martin";
+
+// const tabs = text.split("");
+// function tab() {
+//   if ((tabs.length = " ")) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(tab());
+
+// 20
+// const obj = { a: 2, b: 5, c: 7 };
+
+// const value = Object.entries(obj).map(([key, value]) => key + value);
+
+// console.log(value);
+
+// 21
