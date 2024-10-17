@@ -272,3 +272,129 @@
 // console.log(value);
 
 // 21
+// const son = "13245";
+
+// const result = son.split("").reduce((acc, curVal) => acc + parseInt(curVal), 0);
+
+// console.log(result);
+
+// 22
+// const pupils = [
+//   { name: "Elbek", protcent: 95 },
+//   { name: "Zafar", protcent: 78 },
+//   { name: "Aziz", protcent: 83 },
+//   { name: "Jasur", protcent: 88 },
+//   { name: "Bobur", protcent: 66 },
+//   { name: "Kamron", protcent: 75 },
+// ];
+
+// const allprocent = pupils.reduce((acc, curVal) => acc + curVal.protcent, 0);
+// const ortasi = allprocent / pupils.length;
+
+// console.log("O'rtacha ball ", ortasi);
+
+// 23
+// const pupils = [
+//   { name: "Elbek", protcent: 95 },
+//   { name: "Zafar", protcent: 78 },
+//   { name: "Aziz", protcent: 83 },
+//   { name: "Jasur", protcent: 88 },
+//   { name: "Bobur", protcent: 66 },
+//   { name: "Kamron", protcent: 75 },
+// ];
+// const grades = pupils.map((pupil) => {
+//   let grade;
+//   if (pupil.protcent >= 90) {
+//     grade = 5;
+//   } else if (pupil.protcent >= 80) {
+//     grade = 4;
+//   } else if (pupil.protcent >= 70) {
+//     grade = 3;
+//   } else {
+//     grade = 2;
+//   }
+
+//   return { ...pupil, grade };
+// });
+
+// console.log(grades);
+
+// 24
+// const pupils = [
+//     {
+//       name: "Elbek",
+//       protcent: 95,
+//     },
+//     {
+//       name: "Zafar",
+//       protcent: 78,
+//     },
+//     {
+//       name: "Aziz",
+//       protcent: 83,
+//     },
+//     {
+//       name: "Jasur",
+//       protcent: 88,
+//     },
+//     {
+//       name: "Bobur",
+//       protcent: 66,
+//     },
+//     {
+//       name: "Kamron",
+//       protcent: 75,
+//     },
+//   ];
+
+//   const result = pupil
+//   .map((pupil) => {
+//     return{...pupils, isPassed: pupil.protcent > 70}
+//   })
+
+//25
+// const pupils = [
+//   {
+//     name: "Elbek",
+//     protcent: 95,
+//   },
+//   {
+//     name: "Zafar",
+//     protcent: 78,
+//   },
+//   {
+//     name: "Aziz",
+//     protcent: 83,
+//   },
+//   {
+//     name: "Jasur",
+//     protcent: 88,
+//   },
+//   {
+//     name: "Bobur",
+//     protcent: 66,
+//   },
+//   {
+//     name: "Kamron",
+//     protcent: 75,
+//   },
+// ];
+
+// const result = pupil
+//   .map((pupil) => {
+//     return { ...pupils, isPassed: pupil.protcent > 70 };
+//   })
+//   .reduce(
+//     (acc, curVal) => {
+//       curVal.isPassed
+//         ? (acc.passed = curVal.passed + 1)
+//         : (acc.failed = acc.failed + 1);
+//       return acc;
+//     },
+//     {
+//       passed: 0,
+//       failed: 0,
+//     }
+//   );
+
+// console.log(result);
